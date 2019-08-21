@@ -67,7 +67,6 @@ _STOP_SEQUENCE = (
 class SSD1608(displayio.EPaperDisplay):
     """SSD1608 driver"""
     def __init__(self, bus, **kwargs):
-        color_command = None
         start_sequence = bytearray(_START_SEQUENCE)
         width = kwargs["width"]
         start_sequence[4] = width - 1
