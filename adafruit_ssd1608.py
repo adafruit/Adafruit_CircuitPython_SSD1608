@@ -33,7 +33,7 @@ Implementation Notes
 
 **Hardware:**
 
-* `Adafruit 1.54" Monochrome ePaper Display Breakout <https://www.adafruit.com/product/4196>_`
+* `Adafruit 1.54" Monochrome ePaper Display Breakout <https://www.adafruit.com/product/4196>`_
 
 **Software and Dependencies:**
 
