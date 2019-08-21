@@ -33,8 +33,7 @@ Implementation Notes
 
 **Hardware:**
 
-.. todo:: Add links to any specific hardware product page(s), or category page(s). Use unordered list & hyperlink rST
-   inline format: "* `Link Text <url>`_"
+* `Adafruit 1.54" Monochrome ePaper Display Breakout <https://www.adafruit.com/product/4196>_`
 
 **Software and Dependencies:**
 
@@ -55,7 +54,8 @@ _START_SEQUENCE = (
     b"\x3b\x01\x0b" # Set gate line width
     b"\x11\x01\x03" # Data entry sequence
     b"\x2c\x01\x70" # Vcom Voltage
-    b"\x32\x1e\x02\x02\x01\x11\x12\x12\x22\x22\x66\x69\x69\x59\x58\x99\x99\x88\x00\x00\x00\x00\xf8\xb4\x13\x51\x35\x51\x51\x19\x01\x00" # LUT
+    b"\x32\x1e\x02\x02\x01\x11\x12\x12\x22\x22\x66\x69\x69\x59\x58\x99\x99\x88\x00\x00\x00\x00\xf8"
+    b"\xb4\x13\x51\x35\x51\x51\x19\x01\x00" # LUT
     b"\x22\x01\xc7" # Set DISP ctrl2
 )
 
