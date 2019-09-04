@@ -23,14 +23,12 @@ Table of Contents
 .. toctree::
     :caption: Tutorials
 
-.. todo:: Add any Learn guide links here. If there are none, then simply delete this todo and leave
-    the toctree above for use later.
+    Adafruit eInk Display Breakouts <https://learn.adafruit.com/adafruit-eink-display-breakouts>
 
 .. toctree::
     :caption: Related Products
 
-.. todo:: Add any product links here. If there are none, then simply delete this todo and leave
-    the toctree above for use later.
+    Adafruit 1.54" Monochrome ePaper Display Breakout <https://www.adafruit.com/product/4196>
 
 .. toctree::
     :caption: Other Links
