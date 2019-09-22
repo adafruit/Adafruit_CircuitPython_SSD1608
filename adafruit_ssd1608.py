@@ -69,7 +69,7 @@ class SSD1608(displayio.EPaperDisplay):
     def __init__(self, bus, **kwargs):
         start_sequence = bytearray(_START_SEQUENCE)
         width = kwargs["width"]
-        start_sequence[4] = width - 1
+        start_sequence[4] = (width - 1) & 0xff
         start_sequence[5] = (width - 1) >> 8
 
         super().__init__(bus, start_sequence, _STOP_SEQUENCE, **kwargs,
