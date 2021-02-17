@@ -28,7 +28,7 @@ display_bus = displayio.FourWire(
 time.sleep(1)
 
 display = adafruit_ssd1608.SSD1608(
-    display_bus, width=200, height=200, busy_pin=epd_busy
+    display_bus, width=200, height=200, busy_pin=epd_busy, rotation=180
 )
 
 g = displayio.Group()
