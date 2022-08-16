@@ -27,7 +27,7 @@ Implementation Notes
 
 import displayio
 
-__version__ = "0.0.0-auto.0"
+__version__ = "0.0.0+auto.0"
 __repo__ = "https://github.com/adafruit/Adafruit_CircuitPython_SSD1608.git"
 
 _START_SEQUENCE = (
