@@ -48,7 +48,7 @@ _STOP_SEQUENCE = b"\x10\x01\x01"  # Enter deep sleep
 class SSD1608(displayio.EPaperDisplay):
     """SSD1608 driver"""
 
-    def __init__(self, bus, **kwargs):
+    def __init__(self, bus: displayio.FourWire, **kwargs) -> None:
         start_sequence = bytearray(_START_SEQUENCE)
         width = kwargs["width"]
         start_sequence[4] = (width - 1) & 0xFF
