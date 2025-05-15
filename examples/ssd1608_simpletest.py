@@ -6,12 +6,14 @@
 Supported products:
   * Adafruit 1.54" Monochrome ePaper Display Breakout
     * https://www.adafruit.com/product/4196
-  """
+"""
 
 import time
+
 import board
 import displayio
 import fourwire
+
 import adafruit_ssd1608
 
 displayio.release_displays()
