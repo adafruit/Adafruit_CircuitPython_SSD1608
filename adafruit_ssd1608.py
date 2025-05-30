@@ -25,7 +25,14 @@ Implementation Notes
 
 """
 
-import displayio
+import epaperdisplay
+
+try:
+    import typing
+
+    import fourwire
+except ImportError:
+    pass
 
 __version__ = "0.0.0+auto.0"
 __repo__ = "https://github.com/adafruit/Adafruit_CircuitPython_SSD1608.git"
@@ -45,10 +52,10 @@ _START_SEQUENCE = (
 _STOP_SEQUENCE = b"\x10\x01\x01"  # Enter deep sleep
 
 
-class SSD1608(displayio.EPaperDisplay):
+class SSD1608(epaperdisplay.EPaperDisplay):
     """SSD1608 driver"""
 
-    def __init__(self, bus: displayio.FourWire, **kwargs) -> None:
+    def __init__(self, bus: fourwire.FourWire, **kwargs) -> None:
         start_sequence = bytearray(_START_SEQUENCE)
         width = kwargs["width"]
         start_sequence[4] = (width - 1) & 0xFF
